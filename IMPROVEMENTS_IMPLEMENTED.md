@@ -106,7 +106,7 @@ Based on user feedback, the following improvements have been made to strengthen 
 2. **Add family photo** to About page (placeholder currently shows)
 3. **Configure contact form** with Formspree or Netlify Forms
 4. **Update placeholder contact info**:
-   - Phone: +44 7123 456789 → Real number
+   - Phone: +44 7889 123939 → Real number
    - Email: info@thatmattguy.co.uk → Real email
 5. **Add real testimonials** as projects are completed
 6. **Add real project screenshots** to Portfolio page

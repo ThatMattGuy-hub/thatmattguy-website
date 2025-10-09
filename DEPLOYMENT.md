@@ -161,7 +161,7 @@ vercel --prod
 
 ### Update Contact Details
 Replace placeholder contact info:
-- Phone: `+44 7123 456789` → Your real number
+- Phone: `+44 7889 123939` → Your real number
 - Email: `info@thatmattguy.co.uk` → Your real email
 - Social media links in Footer.jsx
 

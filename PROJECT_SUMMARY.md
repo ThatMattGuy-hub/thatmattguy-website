@@ -119,7 +119,7 @@ npm run preview
 ## 📞 Placeholder Contact Info (UPDATE THESE!)
 
 - **Email**: info@thatmattguy.co.uk
-- **Phone**: +44 7123 456789
+- **Phone**: +44 7889 123939
 - **Location**: Ribble Valley, North West UK
 - **Social**: Facebook, Twitter, LinkedIn, Instagram (links in Footer)
 

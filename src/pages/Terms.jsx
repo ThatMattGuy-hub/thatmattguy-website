@@ -315,8 +315,8 @@ export default function Terms() {
                 If you have any questions about these Terms and Conditions, please contact us:
               </p>
               <div className="space-y-2 text-gray-600">
-                <p><strong>Email:</strong> <a href="mailto:info@thatmattguy.co.uk" className="text-primary-600 hover:text-primary-700">info@thatmattguy.co.uk</a></p>
-                <p><strong>Phone:</strong> <a href="tel:+447123456789" className="text-primary-600 hover:text-primary-700">+44 7123 456789</a></p>
+                <p><strong>Email:</strong> <a href="mailto:matt@thatmattguy.co.uk" className="text-primary-600 hover:text-primary-700">matt@thatmattguy.co.uk</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+447889123939" className="text-primary-600 hover:text-primary-700">+44 7889 123939</a></p>
                 <p><strong>Location:</strong> Ribble Valley, Lancashire, United Kingdom</p>
               </div>
             </div>
