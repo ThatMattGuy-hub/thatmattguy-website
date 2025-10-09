@@ -90,7 +90,7 @@ export default function Footer() {
             <div className="mt-4">
               <p className="text-xs text-gray-500 mb-2">Connect on social media:</p>
               <div className="flex space-x-4">
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary-400 transition-colors" aria-label="Facebook" title="Facebook (Coming Soon)">
+                <a href="https://www.facebook.com/61581685242783/" target="_blank" rel="noopener noreferrer" className="hover:text-primary-400 transition-colors" aria-label="Facebook" title="Facebook (Coming Soon)">
                   <Facebook size={20} />
                 </a>
                 <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary-400 transition-colors" aria-label="Twitter" title="Twitter (Coming Soon)">
@@ -99,7 +99,7 @@ export default function Footer() {
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary-400 transition-colors" aria-label="LinkedIn" title="LinkedIn (Coming Soon)">
                   <Linkedin size={20} />
                 </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary-400 transition-colors" aria-label="Instagram" title="Instagram (Coming Soon)">
+                <a href="https://instagram.com/thatmatt.guy" target="_blank" rel="noopener noreferrer" className="hover:text-primary-400 transition-colors" aria-label="Instagram" title="Instagram (Coming Soon)">
                   <Instagram size={20} />
                 </a>
               </div>
@@ -107,9 +107,19 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
-          <p>&copy; {currentYear} ThatMattGuy. All rights reserved.</p>
-          <p className="mt-2 text-gray-500">
+        <div className="border-t border-gray-800 mt-8 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center text-sm space-y-4 md:space-y-0">
+            <p>&copy; {currentYear} ThatMattGuy. All rights reserved.</p>
+            <div className="flex space-x-6">
+              <Link to="/privacy" className="hover:text-primary-400 transition-colors">
+                Privacy Policy
+              </Link>
+              <Link to="/terms" className="hover:text-primary-400 transition-colors">
+                Terms & Conditions
+              </Link>
+            </div>
+          </div>
+          <p className="mt-4 text-center text-gray-500">
             Web Design Ribble Valley | Small Business Websites North West England
           </p>
         </div>
