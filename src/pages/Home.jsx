@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Sparkles, Code, Zap, Heart, Users, TrendingUp, ArrowRight, CheckCircle } from 'lucide-react'
+import { Sparkles, Code, Zap, Heart, Users, TrendingUp, ArrowRight, CheckCircle, Palette, ShoppingCart, Brain } from 'lucide-react'
 import Button from '../components/Button'
 import SEO from '../components/SEO'
 import Testimonials from '../components/Testimonials'
@@ -7,22 +7,25 @@ import Testimonials from '../components/Testimonials'
 export default function Home() {
   const services = [
     {
-      icon: <Code className="w-8 h-8" />,
-      title: 'Web Design',
+      icon: <Palette className="w-8 h-8" />,
+      title: 'Web Design & Development',
       description: 'Beautiful, modern websites that make your business stand out and convert visitors into customers.',
-      examples: ['Business websites', 'E-commerce stores', 'Landing pages', 'Portfolio sites'],
+      examples: ['Custom web design', 'Mobile-responsive sites', 'Fast loading speeds', 'SEO optimized'],
+      link: '/services/web-design',
     },
     {
-      icon: <Sparkles className="w-8 h-8" />,
-      title: 'Web Applications',
-      description: 'Custom web apps tailored to your business needs.',
-      examples: ['Booking systems', 'Customer portals', 'Inventory management', 'Quote calculators'],
+      icon: <ShoppingCart className="w-8 h-8" />,
+      title: 'E-Commerce Solutions',
+      description: 'Complete online stores with secure payments and inventory management.',
+      examples: ['Online shops', 'Payment integration', 'Product management', 'Sales analytics'],
+      link: '/services/e-commerce',
     },
     {
-      icon: <Zap className="w-8 h-8" />,
-      title: 'Automation',
-      description: 'Save hours every week by automating repetitive tasks.',
-      examples: ['Automated email replies', 'Appointment reminders', 'Invoice generation', 'Data entry automation'],
+      icon: <Brain className="w-8 h-8" />,
+      title: 'AI & Automation',
+      description: 'AI-powered automation that saves hours every week and makes your business smarter.',
+      examples: ['AI chatbots', 'Intelligent workflows', 'Content generation', 'Data analysis'],
+      link: '/services/automation',
     },
   ]
 
@@ -39,8 +42,8 @@ export default function Home() {
     <>
       <SEO 
         title="Home"
-        description="ThatMattGuy offers web design, web apps, and automation for small businesses in Ribble Valley & North West England. Get your first website designed for free!"
-        keywords="Web Design Ribble Valley, North West Business Websites, Small Business Web Design, Web Development Ribble Valley, Automation Services"
+        description="ThatMattGuy offers web design, e-commerce, AI automation, and web apps for small businesses in Ribble Valley & North West England. AI-powered solutions and professional websites. Get your first website designed for free!"
+        keywords="Web Design Ribble Valley, AI Automation Lancashire, E-commerce North West, Small Business Web Design, Web Development Ribble Valley, AI Chatbot Clitheroe"
       />
 
       {/* Hero Section */}
@@ -104,38 +107,43 @@ export default function Home() {
               What I Can Do For You
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              From simple websites to complex automation, I'll help your business work smarter and look better online.
+              From beautiful websites to AI-powered automation, I'll help your Ribble Valley business work smarter and look better online.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <div 
+              <Link
                 key={index}
-                className="bg-white border border-gray-200 rounded-xl p-8 shadow-lg hover:shadow-2xl hover:border-primary-400 hover:-translate-y-1 transition-all duration-300 relative overflow-hidden group"
+                to={service.link}
+                className="bg-white border border-gray-200 rounded-xl p-8 shadow-lg hover:shadow-2xl hover:border-primary-400 hover:-translate-y-1 transition-all duration-300 relative overflow-hidden group block"
               >
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary-50 to-accent-50 rounded-full -mr-16 -mt-16 opacity-50 group-hover:opacity-100 transition-opacity"></div>
                 <div className="text-primary-600 mb-4 relative z-10 group-hover:scale-110 transition-transform duration-300">
                   {service.icon}
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 relative z-10">
+                <h3 className="text-xl font-bold text-gray-900 mb-3 relative z-10 group-hover:text-primary-600 transition-colors">
                   {service.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed mb-4 relative z-10">
                   {service.description}
                 </p>
                 <div className="mt-4 pt-4 border-t border-gray-100 relative z-10">
-                  <p className="text-sm font-semibold text-gray-700 mb-2">Examples:</p>
+                  <p className="text-sm font-semibold text-gray-700 mb-2">Key Features:</p>
                   <ul className="space-y-1">
                     {service.examples.map((example, idx) => (
                       <li key={idx} className="text-sm text-gray-600 flex items-center">
-                        <span className="w-1.5 h-1.5 bg-primary-500 rounded-full mr-2"></span>
+                        <CheckCircle className="w-4 h-4 text-primary-500 mr-2 flex-shrink-0" />
                         {example}
                       </li>
                     ))}
                   </ul>
                 </div>
-              </div>
+                <div className="mt-4 flex items-center text-primary-600 font-semibold text-sm group-hover:translate-x-2 transition-transform relative z-10">
+                  <span>Learn More</span>
+                  <ArrowRight size={16} className="ml-2" />
+                </div>
+              </Link>
             ))}
           </div>
 
@@ -174,6 +182,10 @@ export default function Home() {
                   <li className="flex items-start">
                     <span className="font-semibold mr-2">•</span>
                     <span><strong>Direct communication:</strong> You work with me, not a project manager</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="font-semibold mr-2">•</span>
+                    <span><strong>AI-powered solutions:</strong> Integrate intelligent automation into your business</span>
                   </li>
                   <li className="flex items-start">
                     <span className="font-semibold mr-2">•</span>

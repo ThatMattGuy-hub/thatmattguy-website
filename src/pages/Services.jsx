@@ -1,8 +1,47 @@
-import { CheckCircle, Sparkles, Rocket, Crown, Code, Zap } from 'lucide-react'
+import { CheckCircle, Sparkles, Rocket, Crown, Code, Zap, Palette, ShoppingCart, ArrowRight } from 'lucide-react'
 import Button from '../components/Button'
 import SEO from '../components/SEO'
+import { Link } from 'react-router-dom'
 
 export default function Services() {
+  const serviceCategories = [
+    {
+      icon: <Palette className="w-8 h-8" />,
+      title: 'Web Design',
+      description: 'Custom, mobile-responsive web design that captures your brand and converts visitors into customers.',
+      link: '/services/web-design',
+      highlights: ['Custom visual design', 'Mobile-first approach', 'User-centered layouts', 'Modern aesthetics'],
+    },
+    {
+      icon: <Code className="w-8 h-8" />,
+      title: 'Web Development',
+      description: 'Professional web development with clean code, fast performance, and scalable architecture.',
+      link: '/services/web-development',
+      highlights: ['Modern technologies', 'Lightning-fast performance', 'Security first', 'Scalable solutions'],
+    },
+    {
+      icon: <ShoppingCart className="w-8 h-8" />,
+      title: 'E-Commerce Sites',
+      description: 'Complete online stores with secure payments, inventory management, and powerful analytics.',
+      link: '/services/e-commerce',
+      highlights: ['Full e-commerce features', 'Secure payments', 'Inventory management', 'Sales analytics'],
+    },
+    {
+      icon: <Zap className="w-8 h-8" />,
+      title: 'AI & Automation Solutions',
+      description: 'Streamline your business with AI-powered automation. From intelligent chatbots to automated workflows that save hours every week.',
+      link: '/services/automation',
+      highlights: ['AI chatbots', 'Intelligent automation', 'Workflow optimization', 'AI content generation'],
+    },
+    {
+      icon: <Rocket className="w-8 h-8" />,
+      title: 'Web Applications',
+      description: 'Custom web applications built specifically for your business needs and processes.',
+      link: '/services/web-applications',
+      highlights: ['Booking systems', 'Customer portals', 'Data dashboards', 'Internal tools'],
+    },
+  ]
+
   const pricingTiers = [
     {
       name: 'Starter Website',
@@ -62,23 +101,6 @@ export default function Services() {
     },
   ]
 
-  const additionalServices = [
-    {
-      icon: <Code className="w-8 h-8" />,
-      title: 'Web Application Development',
-      description: 'Custom web apps tailored to your specific business needs',
-      examples: ['Booking systems', 'Customer portals', 'Internal tools', 'Data dashboards'],
-      pricing: 'Custom quote based on requirements',
-    },
-    {
-      icon: <Zap className="w-8 h-8" />,
-      title: 'Automation Solutions',
-      description: 'Streamline your business processes and save time',
-      examples: ['Email automation', 'Data entry automation', 'Report generation', 'Workflow optimisation'],
-      pricing: 'Custom quote based on complexity',
-    },
-  ]
-
   return (
     <>
       <SEO 
@@ -95,7 +117,7 @@ export default function Services() {
               Services & Pricing
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
-              Transparent, affordable pricing for small businesses. No hidden fees, no surprises. 
+              Transparent, affordable pricing for small businesses in Ribble Valley & Lancashire. No hidden fees, no surprises. 
               Plus, <span className="font-semibold text-primary-600">3-5 free starter websites available</span> for 
               my first clients!
             </p>
@@ -103,9 +125,70 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Pricing Tiers */}
+      {/* Service Categories Section */}
       <section className="py-20 bg-white">
         <div className="container-custom">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              What I Can Do For Your Business
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              From design to development, e-commerce to automation—I offer comprehensive web services 
+              tailored to small businesses across the Ribble Valley and North West.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {serviceCategories.map((service, index) => (
+              <Link
+                key={index}
+                to={service.link}
+                className="bg-gray-50 rounded-xl p-8 border-2 border-transparent hover:border-primary-300 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
+              >
+                <div className="text-primary-600 mb-4 group-hover:scale-110 transition-transform duration-300">
+                  {service.icon}
+                </div>
+                
+                <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary-600 transition-colors">
+                  {service.title}
+                </h3>
+                
+                <p className="text-gray-600 mb-4">
+                  {service.description}
+                </p>
+
+                <ul className="space-y-2 mb-6">
+                  {service.highlights.map((highlight, idx) => (
+                    <li key={idx} className="flex items-center space-x-2 text-sm text-gray-700">
+                      <CheckCircle className="text-primary-600 flex-shrink-0" size={16} />
+                      <span>{highlight}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="flex items-center text-primary-600 font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                  <span>Learn More</span>
+                  <ArrowRight size={20} className="ml-2" />
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Tiers */}
+      <section className="py-20 bg-gray-50">
+        <div className="container-custom">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Website Pricing Packages
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Simple, transparent pricing for websites. Choose the package that fits your needs, 
+              or contact me for a custom quote.
+            </p>
+          </div>
+
           <div className="grid md:grid-cols-3 gap-8">
             {pricingTiers.map((tier, index) => (
               <div 
@@ -186,64 +269,6 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Additional Services */}
-      <section className="py-20 bg-gray-50">
-        <div className="container-custom">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Additional Services
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Need something more specialised? I also offer custom web applications and automation solutions.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {additionalServices.map((service, index) => (
-              <div 
-                key={index}
-                className="bg-white rounded-xl p-8 border-2 border-gray-100 shadow-lg hover:border-primary-300 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 group"
-              >
-                <div className="text-primary-600 mb-4 group-hover:scale-110 transition-transform duration-300">
-                  {service.icon}
-                </div>
-
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                  {service.title}
-                </h3>
-
-                <p className="text-gray-600 mb-4">
-                  {service.description}
-                </p>
-
-                <div className="mb-4">
-                  <h4 className="font-semibold text-gray-900 mb-2">Examples:</h4>
-                  <ul className="space-y-1">
-                    {service.examples.map((example, idx) => (
-                      <li key={idx} className="flex items-center space-x-2 text-gray-700">
-                        <span className="w-1.5 h-1.5 bg-primary-600 rounded-full"></span>
-                        <span>{example}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className="pt-4 border-t border-gray-100">
-                  <p className="text-sm font-semibold text-gray-900">
-                    Pricing: <span className="text-primary-600">{service.pricing}</span>
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Button to="/contact" size="lg" className="hover:scale-105 transition-transform duration-300">
-              Discuss Your Project
-            </Button>
-          </div>
-        </div>
-      </section>
 
       {/* What's Included */}
       <section className="py-20 bg-white">

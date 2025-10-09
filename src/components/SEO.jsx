@@ -5,7 +5,8 @@ export default function SEO({
   description, 
   keywords,
   ogImage = '/Logo.png',
-  ogType = 'website'
+  ogType = 'website',
+  robots = 'index, follow'
 }) {
   const siteTitle = 'ThatMattGuy - Web Design & Automation'
   const fullTitle = title ? `${title} | ${siteTitle}` : siteTitle
@@ -15,12 +16,15 @@ export default function SEO({
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
       {keywords && <meta name="keywords" content={keywords} />}
+      <meta name="robots" content={robots} />
+      <link rel="canonical" href={`https://thatmattguy.co.uk${window.location.pathname}`} />
       
       {/* Open Graph */}
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content={ogType} />
       <meta property="og:image" content={ogImage} />
+      <meta property="og:url" content={`https://thatmattguy.co.uk${window.location.pathname}`} />
       
       {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
