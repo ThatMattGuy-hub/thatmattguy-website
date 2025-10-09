@@ -183,10 +183,6 @@ export default function Home() {
                     <span className="font-semibold mr-2">•</span>
                     <span><strong>Performance-first:</strong> Fast-loading sites that rank well on Google</span>
                   </li>
-                  <li className="flex items-start">
-                    <span className="font-semibold mr-2">•</span>
-                    <span><strong>No lock-in:</strong> You own everything, no ongoing fees unless you want support</span>
-                  </li>
                 </ul>
               </div>
 
