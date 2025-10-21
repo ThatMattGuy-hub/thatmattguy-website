@@ -196,18 +196,18 @@ export default function Portfolio() {
               </div>
             </div>
 
-            {/* Be Part of My Portfolio */}
+            {/* CTA Section */}
             <div className="bg-primary-600 text-white rounded-2xl p-8 md:p-12 text-center shadow-2xl">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Want to Be Featured Here?
+                Ready to Start Your Project?
               </h2>
               <p className="text-xl mb-8 opacity-90">
-                I'm offering 3-5 free starter websites to build this portfolio. Your project could be 
-                one of the first showcased here, helping both of us grow!
+                While I'm building my portfolio, I'm actively taking on new projects. 
+                Let's discuss how I can help your business grow online!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="accent" size="lg" to="/contact" className="group hover:scale-105 transition-transform duration-300">
-                  Get Your Free Website
+                  Get Started Today
                   <ArrowRight className="ml-2 group-hover:translate-x-2 transition-transform" size={20} />
                 </Button>
                 <Button variant="secondary" size="lg" to="/services" className="hover:scale-105 transition-transform duration-300">
@@ -224,14 +224,14 @@ export default function Portfolio() {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              No Portfolio Yet? Here's Why You Can Still Trust Me
+              Why Work With Me
             </h2>
             
             <div className="text-left space-y-4 text-gray-700 leading-relaxed">
               <p>
-                I understand that choosing a freelancer without a portfolio might feel risky. That's exactly 
-                why I'm offering free projects — to prove my skills and earn your trust without any financial 
-                risk on your part.
+                With 7 years of professional experience building websites and web applications, 
+                I bring proven expertise to every project. Now as a freelancer, I offer that same 
+                quality with more personal attention and competitive pricing.
               </p>
 
               <p>
@@ -241,7 +241,7 @@ export default function Portfolio() {
               <ul className="space-y-2 ml-6">
                 <li className="flex items-start space-x-2">
                   <span className="text-primary-600 font-bold mt-1">✓</span>
-                  <span>A professional website built with modern technologies</span>
+                  <span>Professional websites built with modern technologies</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="text-primary-600 font-bold mt-1">✓</span>
@@ -262,8 +262,8 @@ export default function Portfolio() {
               </ul>
 
               <p>
-                Plus, you'll be helping a local freelancer get started while getting a quality website 
-                for your business. It's a win-win!
+                As a local freelancer, I'm invested in the success of businesses in Ribble Valley 
+                and the North West. Your success is my success.
               </p>
             </div>
 

@@ -62,7 +62,7 @@ export default function WebDesign() {
     <>
       <SEO 
         title="Web Design Ribble Valley | Professional Website Design Lancashire"
-        description="Expert web design services in Ribble Valley and Lancashire. Custom, mobile-responsive websites that attract customers and grow your North West business. Free starter websites available."
+        description="Expert web design services in Ribble Valley and Lancashire. Custom, mobile-responsive websites that attract customers and grow your North West business."
         keywords="web design Ribble Valley, website design Lancashire, web designer Clitheroe, professional web design North West, custom website design Lancashire, responsive web design Ribble Valley"
       />
 
@@ -79,7 +79,7 @@ export default function WebDesign() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button to="/contact" size="lg">
-                Get Your Free Website
+                Get Started Today
               </Button>
               <Button to="/portfolio" variant="outline" size="lg">
                 View Portfolio
@@ -200,8 +200,8 @@ export default function WebDesign() {
               </p>
               <p className="mb-6">
                 My web design services include everything you need to succeed online: custom visual design, mobile responsiveness, 
-                fast loading speeds, SEO optimization, and ongoing support. Plus, I'm offering <strong>3-5 free starter websites</strong> for 
-                my first clients in the Ribble Valley and Lancashire area.
+                fast loading speeds, SEO optimization, and ongoing support. With competitive pricing and flexible payment plans, 
+                professional web design is accessible to businesses of all sizes in the Ribble Valley and Lancashire area.
               </p>
             </div>
           </div>
@@ -216,7 +216,7 @@ export default function WebDesign() {
               Affordable Web Design Pricing
             </h2>
             <p className="text-xl text-gray-600 mb-8">
-              Transparent pricing with no hidden fees. Starter websites from £495 (or FREE for my first 3-5 clients).
+              Transparent pricing with no hidden fees. Starter websites from £595.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button to="/services" variant="outline" size="lg">

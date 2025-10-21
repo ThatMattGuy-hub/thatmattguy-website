@@ -270,9 +270,8 @@ export default function ECommerce() {
                 so you can confidently manage your online store and ongoing support to help you grow.
               </p>
               <p className="mb-6">
-                E-commerce pricing starts from £1,795 for a complete online store with all essential features. I also offer payment plans 
-                to make it easier for Ribble Valley and Lancashire businesses to get started online. Plus, I'm currently offering 
-                <strong> 3-5 free starter websites</strong> for my first clients—a great opportunity if you're just starting your e-commerce journey.
+                E-commerce pricing starts from £1,895 for a complete online store with all essential features. I also offer payment plans 
+                to make it easier for Ribble Valley and Lancashire businesses to get started online and grow their e-commerce presence.
               </p>
             </div>
           </div>

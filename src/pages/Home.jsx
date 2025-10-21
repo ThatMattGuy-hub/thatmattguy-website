@@ -42,7 +42,7 @@ export default function Home() {
     <>
       <SEO 
         title="Home"
-        description="ThatMattGuy offers web design, e-commerce, AI automation, and web apps for small businesses in Ribble Valley & North West England. AI-powered solutions and professional websites. Get your first website designed for free!"
+        description="ThatMattGuy offers web design, e-commerce, AI automation, and web apps for small businesses in Ribble Valley & North West England. AI-powered solutions and professional websites."
         keywords="Web Design Ribble Valley, AI Automation Lancashire, E-commerce North West, Small Business Web Design, Web Development Ribble Valley, AI Chatbot Clitheroe"
       />
 
@@ -53,7 +53,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto text-center animate-fadeIn">
             <div className="inline-flex items-center space-x-2 bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-medium mb-6 shadow-md border border-primary-200 animate-bounce-subtle">
               <Sparkles size={16} className="animate-pulse-subtle" />
-              <span>Limited Time: Free Website Projects Available</span>
+              <span>Professional Web Solutions for Small Businesses</span>
             </div>
             
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
@@ -62,9 +62,8 @@ export default function Home() {
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-600 mb-4 leading-relaxed">
-              Hi, I'm Matt! After 7 years building websites and web apps for a local company, I'm starting my own 
-              freelance journey helping small businesses in Ribble Valley & the North West UK. I'm looking for my first few clients -
-              <span className="font-semibold text-primary-600"> so you can get your website designed for free</span>.
+              Hi, I'm Matt! After 7 years building websites and web apps for a local company, I'm now 
+              helping small businesses in Ribble Valley & the North West UK with professional, affordable web solutions.
             </p>
             
             <div className="text-lg text-gray-500 mb-8">
@@ -83,7 +82,7 @@ export default function Home() {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button to="/contact" size="lg" className="group hover:scale-105 transition-transform duration-300">
-                Book Your Free Website
+                Get Started Today
                 <ArrowRight className="ml-2 group-hover:translate-x-2 transition-transform" size={20} />
               </Button>
               <Button to="/services" variant="secondary" size="lg" className="hover:scale-105 transition-transform duration-300">
@@ -92,7 +91,7 @@ export default function Home() {
             </div>
 
             <p className="mt-6 text-sm text-gray-500">
-              ⚡ Only 3-5 free projects available • Based in Ribble Valley, serving North West UK
+              ⚡ Based in Ribble Valley, serving North West UK
             </p>
           </div>
         </div>
@@ -199,9 +198,8 @@ export default function Home() {
               </div>
 
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                I'm offering <strong>3-5 free website projects</strong> to build my portfolio and earn your trust. 
-                In return, I'll give you a professional website that helps your business grow, plus a testimonial 
-                and case study to help me get started.
+                With competitive pricing and flexible payment plans, I make professional web development 
+                accessible to small businesses. Let's work together to create something that helps your business grow.
               </p>
 
               <div className="grid grid-cols-2 gap-4">
@@ -309,12 +307,11 @@ export default function Home() {
               Ready to grow your business online?
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Let's build something amazing together. Book your free website project today — 
-              limited spots available!
+              Let's build something amazing together. Get in touch today to discuss your project!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="accent" size="lg" to="/contact" className="hover:scale-105 transition-transform duration-300">
-                Get Your Free Website
+                Get Started Today
               </Button>
               <Button variant="secondary" size="lg" to="/about" className="hover:scale-105 transition-transform duration-300">
                 Meet Matt

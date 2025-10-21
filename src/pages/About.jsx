@@ -129,23 +129,14 @@ export default function About() {
                 </p>
               </div>
 
-              <div className="bg-accent-50 border-l-4 border-accent-500 p-6 rounded-r-lg my-6 shadow-md">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Why I'm Offering Some Free Projects</h3>
-                <p className="leading-relaxed mb-4">
-                  To get started, I'm offering to build a few websites for free — no catch. I want to build a portfolio and earn trust locally.
-                </p>
-                <p className="leading-relaxed mb-0">
-                  If I make you a free site, all I ask in return is a short testimonial and permission to show your project on my website. You get a professional website, and I get to prove what I can do. Win-win.
-                </p>
-              </div>
 
               <div className="bg-primary-50 border-l-4 border-primary-600 p-6 rounded-r-lg my-6 shadow-md">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Looking Ahead</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">What I Offer</h3>
                 <p className="leading-relaxed mb-4">
-                  I'm excited to work with other small businesses in Ribble Valley, Lancaster, Blackpool, and across the North West.
+                  I'm excited to work with small businesses in Ribble Valley, Lancaster, Blackpool, and across the North West.
                 </p>
                 <p className="leading-relaxed mb-0">
-                  Whether you need a website, an online store, or a simple automation to save time, I'd love to help. Let's build something that actually makes a difference for your business.
+                  Whether you need a website, an online store, or a simple automation to save time, I'd love to help. With competitive pricing and flexible payment plans, I make professional web development accessible to businesses of all sizes. Let's build something that actually makes a difference for your business.
                 </p>
               </div>
             </div>
@@ -214,7 +205,7 @@ export default function About() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="accent" size="lg" to="/contact" className="hover:scale-105 transition-transform duration-300">
-                Book a Free Consultation
+                Get in Touch
               </Button>
               <Button variant="secondary" size="lg" to="/services" className="hover:scale-105 transition-transform duration-300">
                 View Services

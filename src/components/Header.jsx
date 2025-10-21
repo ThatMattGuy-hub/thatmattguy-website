@@ -101,7 +101,7 @@ export default function Header() {
               to="/contact"
               className="bg-primary-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-primary-700 transition-colors"
             >
-              Get Started Free
+              Get Started
             </Link>
           </div>
 
@@ -175,7 +175,7 @@ export default function Header() {
               onClick={() => setIsMenuOpen(false)}
               className="block w-full text-center bg-primary-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-primary-700 transition-colors"
             >
-              Get Started Free
+              Get Started
             </Link>
           </div>
         )}

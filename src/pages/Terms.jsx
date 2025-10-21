@@ -122,9 +122,9 @@ export default function Terms() {
 
                 <h3 className="text-lg font-semibold text-gray-900 mb-2 mt-4">Payment Schedule</h3>
                 <ul className="list-disc pl-6 space-y-2 text-gray-600">
-                  <li><strong>Starter Websites (£495):</strong> Full payment upfront (or free for first 3-5 clients)</li>
+                  <li><strong>Starter Websites (£595):</strong> Full payment upfront</li>
                   <li><strong>Business Websites (£995+):</strong> 50% deposit, 50% on completion</li>
-                  <li><strong>E-Commerce/Advanced (£1,795+):</strong> 33% deposit, 33% at midpoint, 34% on completion</li>
+                  <li><strong>E-Commerce/Advanced (£1,895+):</strong> 33% deposit, 33% at midpoint, 34% on completion</li>
                   <li><strong>Custom Projects:</strong> Payment schedule agreed in project proposal</li>
                 </ul>
 

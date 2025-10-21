@@ -6,7 +6,7 @@ export default function Testimonials({ testimonials = [] }) {
     {
       name: 'Coming Soon',
       business: 'First Client Project',
-      text: 'Testimonials from my first clients will appear here soon. Want to be featured? Book your free website project today!',
+      text: 'Testimonials from my first clients will appear here soon. Want to be featured? Get in touch to discuss your project today!',
       rating: 5,
       isPlaceholder: true,
     },
@@ -74,7 +74,7 @@ export default function Testimonials({ testimonials = [] }) {
               href="/contact"
               className="inline-flex items-center text-primary-600 font-semibold hover:text-primary-700 transition-colors"
             >
-              Book Your Free Website Project →
+              Get Started Today →
             </a>
           </div>
         )}

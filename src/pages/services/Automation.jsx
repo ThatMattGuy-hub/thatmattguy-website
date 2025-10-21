@@ -436,7 +436,7 @@ export default function Automation() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="accent" size="lg" to="/contact" className="hover:scale-105 transition-transform duration-300">
-                Get Your Free Automation Consultation
+                Get Started with Automation
               </Button>
               <Button variant="secondary" size="lg" to="/services" className="hover:scale-105 transition-transform duration-300">
                 View All Services

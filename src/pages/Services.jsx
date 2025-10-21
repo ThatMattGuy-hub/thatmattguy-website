@@ -45,9 +45,8 @@ export default function Services() {
   const pricingTiers = [
     {
       name: 'Starter Website',
-      price: '£495',
-      originalPrice: 'FREE',
-      badge: 'Limited Time',
+      price: '£595',
+      badge: 'Most Popular',
       description: 'Perfect for small businesses just getting started online',
       features: [
         'Up to 5 pages',
@@ -59,7 +58,7 @@ export default function Services() {
         '1 month support',
         'Fast loading speed',
       ],
-      cta: 'Get Started Free',
+      cta: 'Get Started',
       popular: true,
       icon: <Sparkles className="w-6 h-6" />,
     },
@@ -83,7 +82,7 @@ export default function Services() {
     },
     {
       name: 'E-Commerce / Advanced',
-      price: 'From £1,795',
+      price: 'From £1,895',
       description: 'Full-featured online stores and complex websites',
       features: [
         'Unlimited pages',
@@ -105,7 +104,7 @@ export default function Services() {
     <>
       <SEO 
         title="Services & Pricing"
-        description="Affordable web design, web development, and automation services for small businesses in Ribble Valley & North West UK. Starter websites from £495 (free for first clients)."
+        description="Affordable web design, web development, and automation services for small businesses in Ribble Valley & North West UK. Starter websites from £595."
         keywords="Web Design Pricing Ribble Valley, Affordable Web Design North West, Small Business Website Cost, Web Development Services Ribble Valley"
       />
 
@@ -117,9 +116,7 @@ export default function Services() {
               Services & Pricing
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
-              Transparent, affordable pricing for small businesses in Ribble Valley & Lancashire. No hidden fees, no surprises. 
-              Plus, <span className="font-semibold text-primary-600">3-5 free starter websites available</span> for 
-              my first clients!
+              Transparent, affordable pricing for small businesses in Ribble Valley & Lancashire. No hidden fees, no surprises.
             </p>
           </div>
         </div>
@@ -258,10 +255,6 @@ export default function Services() {
           </div>
 
           <div className="mt-12 text-center">
-            <p className="text-gray-600 mb-4">
-              <strong>Note:</strong> Free starter websites are available for the first 3-5 clients only. 
-              Limited availability based on my schedule.
-            </p>
             <p className="text-sm text-gray-500">
               All prices exclude VAT. Payment plans available for Business and E-Commerce packages.
             </p>
@@ -315,7 +308,7 @@ export default function Services() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="accent" size="lg" to="/contact" className="hover:scale-105 transition-transform duration-300">
-                Get Your Free Website
+                Get Started Today
               </Button>
               <Button variant="secondary" size="lg" to="/about" className="hover:scale-105 transition-transform duration-300">
                 Learn More About Me

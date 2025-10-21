@@ -155,11 +155,11 @@ export default function Contact() {
 
               <div className="mt-8 p-6 bg-primary-50 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
                 <h3 className="font-bold text-gray-900 mb-2">
-                  Free Projects Available
+                  Competitive Pricing
                 </h3>
                 <p className="text-sm text-gray-600">
-                  I'm offering 3-5 free starter websites to build my portfolio. 
-                  If you're interested, mention it in your message!
+                  I offer affordable web solutions with flexible payment plans. 
+                  Get in touch to discuss your project and receive a quote!
                 </p>
               </div>
             </div>
@@ -247,7 +247,7 @@ export default function Contact() {
                         className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-primary-500 focus:outline-none transition-colors"
                       >
                         <option value="">Select a service</option>
-                        <option value="starter">Starter Website (Free)</option>
+                        <option value="starter">Starter Website</option>
                         <option value="business">Business Website</option>
                         <option value="ecommerce">E-Commerce Site</option>
                         <option value="webapp">Web Application</option>
@@ -350,16 +350,8 @@ export default function Contact() {
                   a: 'I aim to respond to all enquiries within 1 business day, usually much sooner. If you need urgent help, call me directly.',
                 },
                 {
-                  q: 'Are the free websites really free?',
-                  a: 'Yes! I\'m offering 3-5 completely free starter websites to build my portfolio. The only "cost" is your time for a testimonial and permission to showcase the project.',
-                },
-                {
                   q: 'Do you work with businesses outside Ribble Valley?',
                   a: 'Absolutely! While I\'m based in Ribble Valley, I work with businesses across the entire North West and can work remotely with anyone in the UK.',
-                },
-                {
-                  q: 'What happens after the free project?',
-                  a: 'After completion, I provide ongoing support and can help with updates, maintenance, or additional features at my standard rates. No obligation though!',
                 },
               ].map((faq, index) => (
                 <div key={index} className="bg-gray-50 rounded-xl p-6 hover:bg-primary-50 hover:shadow-lg transition-all duration-300">

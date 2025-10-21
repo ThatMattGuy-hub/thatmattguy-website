@@ -259,8 +259,8 @@ export default function WebDevelopment() {
               </p>
               <p className="mb-6">
                 Every website I develop includes mobile responsiveness, fast loading speeds, SEO optimization, security best practices, 
-                and ongoing support. I'm currently offering <strong>3-5 free starter websites</strong> for my first clients in the 
-                Ribble Valley and Lancashire area—a perfect opportunity to get a professionally developed website at no cost.
+                and ongoing support. With competitive pricing and flexible payment plans, professional web development is accessible 
+                to businesses of all sizes in the Ribble Valley and Lancashire area.
               </p>
             </div>
           </div>
