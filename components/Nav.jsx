@@ -65,61 +65,63 @@ export default function Nav() {
   }, [pathname])
 
   return (
-    <header ref={headerRef} className="fixed inset-x-0 top-0 z-50 border-b border-line/60 bg-snow/70 backdrop-blur-md">
-      <div className="container-site flex items-center justify-between py-4">
-        <Link
-          href="/"
-          className="relative z-[60] font-display text-lg font-bold tracking-tight text-char"
-          aria-label="ThatMattGuy — home"
-        >
-          That<span className="text-accent">Matt</span>Guy
-        </Link>
+    <>
+      <header ref={headerRef} className="fixed inset-x-0 top-0 z-50 border-b border-line/60 bg-snow/70 backdrop-blur-md">
+        <div className="container-site flex items-center justify-between py-4">
+          <Link
+            href="/"
+            className="font-display text-lg font-bold tracking-tight text-char"
+            aria-label="ThatMattGuy — home"
+          >
+            That<span className="text-accent">Matt</span>Guy
+          </Link>
 
-        {/* Desktop nav */}
-        <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
-          {links.slice(1).map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={`link-underline font-display text-sm font-medium transition-colors ${
-                pathname.startsWith(link.href) ? 'text-accent' : 'text-muted hover:text-char'
+          {/* Desktop nav */}
+          <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
+            {links.slice(1).map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`link-underline font-display text-sm font-medium transition-colors ${
+                  pathname.startsWith(link.href) ? 'text-accent' : 'text-muted hover:text-char'
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
+            <Magnetic>
+              <Link href="/contact" className="btn-primary !px-5 !py-2.5 text-sm">
+                Start a project
+              </Link>
+            </Magnetic>
+          </nav>
+
+          {/* Mobile toggle */}
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 md:hidden"
+            aria-expanded={open}
+            aria-label={open ? 'Close menu' : 'Open menu'}
+          >
+            <span
+              className={`block h-0.5 w-6 bg-char transition-transform duration-300 ${
+                open ? 'translate-y-1 rotate-45' : ''
               }`}
-            >
-              {link.label}
-            </Link>
-          ))}
-          <Magnetic>
-            <Link href="/contact" className="btn-primary !px-5 !py-2.5 text-sm">
-              Start a project
-            </Link>
-          </Magnetic>
-        </nav>
+            />
+            <span
+              className={`block h-0.5 w-6 bg-char transition-transform duration-300 ${
+                open ? '-translate-y-1 -rotate-45' : ''
+              }`}
+            />
+          </button>
+        </div>
+      </header>
 
-        {/* Mobile toggle */}
-        <button
-          type="button"
-          onClick={() => setOpen((v) => !v)}
-          className="relative z-[60] flex h-10 w-10 flex-col items-center justify-center gap-1.5 md:hidden"
-          aria-expanded={open}
-          aria-label={open ? 'Close menu' : 'Open menu'}
-        >
-          <span
-            className={`block h-0.5 w-6 bg-char transition-transform duration-300 ${
-              open ? 'translate-y-1 rotate-45' : ''
-            }`}
-          />
-          <span
-            className={`block h-0.5 w-6 bg-char transition-transform duration-300 ${
-              open ? '-translate-y-1 -rotate-45' : ''
-            }`}
-          />
-        </button>
-      </div>
-
-      {/* Mobile overlay */}
+      {/* Mobile overlay — sibling of the header so `fixed` spans the viewport */}
       <div
         ref={overlayRef}
-        className="fixed inset-0 z-50 hidden flex-col justify-center bg-snow px-8 md:!hidden"
+        className="fixed inset-0 z-40 hidden flex-col justify-center bg-snow px-8 pt-16 md:!hidden"
         style={{ clipPath: 'inset(0% 0% 100% 0%)' }}
       >
         <nav className="flex flex-col gap-2" aria-label="Mobile">
@@ -140,6 +142,6 @@ export default function Nav() {
           matt@thatmattguy.co.uk — Ribble Valley, UK
         </p>
       </div>
-    </header>
+    </>
   )
 }
